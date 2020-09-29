@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+nav {
+    display: flex; 
+    background-color: #edf2f6;
+    padding: 10px;
+    color: #707682;
+    /*justify-content: space-between;*/
+    /*align-items: center;
+    /*width: 100%;*/    
+    justify-content: flex-end;  
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+nav ul {
+    display: flex;
+
+}
+nav li {
+    padding-right: 20px;
+    list-style: none;
+    
+}
+nav li a {
+    color: #434753;
+    text-decoration: none;
+
+}
+nav li a:hover{
+    color: white;
+    }
+    
+hr{
+    opacity: .2;
+}
+h1 {
+    font-size: 36px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.frase{
+    color: #c4c4c4;
+}
+
+.button-main{
+    border: 1px solid #dd5f60;
+    background-color: #ff5c5f;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #ffdbd5;
+}
+
+.title .container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 293px));
+    grid-template-columns: max-content;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
