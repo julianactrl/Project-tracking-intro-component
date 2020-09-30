@@ -2,11 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 html, body {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 75px;
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-}
 
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 70% 100%, 16% 100%, 0 81%, 0 0);
+
+}
+figure {
+    margin-left: 0;
+}
 nav {
     display: flex; 
     background-color: #edf2f6;
@@ -30,7 +40,7 @@ nav li {
     
 }
 nav li a {
-    color: #434753;
+    color: #232941;
     text-decoration: none;
 
 }
@@ -41,12 +51,32 @@ nav li a:hover{
 hr{
     opacity: .2;
 }
-h1 {
-    font-size: 36px;
+.frase-main{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Barlow Condensed', sans-serif;
+
+}
+.circle-black{
+   font-weight: bold;
+   background-color: #232941;
+   color: #edf2f6;
+   border: 1px solid;
+   border-radius: 15px;
+   width: min-content;
+   padding: 7px;
+   font-weight: bold;
+}
+h1 {
+    font-size: 46px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #232941;
 }
 .frase{
     color: #c4c4c4;
+    letter-spacing: 5px;
+    margin-left: 10px;
 }
 
 .button-main{
@@ -54,13 +84,34 @@ h1 {
     background-color: #ff5c5f;
     font-family: 'Barlow Condensed', sans-serif;
     color: #ffdbd5;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+}
+.txtmain{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #c4c4c4;
+    letter-spacing: 5px;
+    margin-left: 10px;
 }
 
-.title .container{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 293px));
-    grid-template-columns: max-content;
-
+.container-frase{
+    display: flex;
 }
+
+/* .title_container{
+    display: flex;
+} */
+.imagen{
+
+    background-image: url('../images/illustration-devices.svg');
+    width: 705px;
+    height: 472px;
+}
+.container_img{
+    display: flex;
+    justify-content: space-between;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
